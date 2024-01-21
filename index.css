@@ -1,0 +1,153 @@
+.app {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 69px;
+    /* border-bottom: 1px solid seashell; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+    display: inline-flex;
+}
+
+.header .header_right {
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 10px;
+    min-width: 300px;
+}
+
+.header .header_right .option{
+    display: inline-flex;
+    
+} 
+
+.option a {
+    color: slategray;
+    text-decoration: underline;
+}
+
+.mission_container {
+    height: 700px;
+    align-items: center;
+    background-image: url("./assets/img-mission-background.jpg");
+    display: flex;
+    justify-content: space-around;
+    margin-top: 69px;
+}
+
+.mission {
+    width: 1200px;
+    color: slategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.teaofmonth_container {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    color: slategray;
+}
+
+.teaofmonth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#tea_img {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+#teaHeading {
+    color: slategray;
+    margin-top: 10px;
+}
+
+.locations_container {
+    height: 500px;
+    width: 80%;
+    background-image: url("./assets/img-locations-background.jpg");
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: slategray;
+}
+
+.locations {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.location {
+    background-color: black;
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 15px;
+    opacity: 1;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: slategray;
+}
+
+.copyright {
+  width: 100%;
+  margin-left: 20px;
+  color: slategray;
+  display: flex;
+  justify-content: flex-start;
+}
