@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  script: |
+    docker build -t us-central1-docker.pkg.dev/united-column-413604/hello-world-repo/hello-world-image:tag1 .
+  automapSubstitutions: true
+images:
+- 'us-central1-docker.pkg.dev/united-column-413604/hello-world-repo/hello-world-image:tag1 .'
