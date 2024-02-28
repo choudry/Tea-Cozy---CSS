@@ -1,7 +1,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   script: |
-    docker build -t us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1 .
-  automapSubstitutions: true
+    docker build -t us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:$_BRANCH_NAME-$_SHORT_SHA .
+  
 images:
-- 'us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
+- 'us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:$_BRANCH_NAME-$_SHORT_SHA'
+
+substitutions:
+  PROJECT_ID: My First Project
